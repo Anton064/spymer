@@ -678,7 +678,7 @@ def MAIN():
 			def checkver():
 				global info
 				ver = '80'
-				version = requests.post("https://fsystem88.ru/spymer/version.php").json()["version"]
+				version = requests.post("https://Anton064/spymer/version.php").json()["version"]
 				if int(ver) < int(version):
 					info=Back.RED+"\nВерсия устарела и нуждается в обновлении!"+Style.RESET_ALL
 
@@ -777,7 +777,7 @@ def MAIN():
 			def update():
 				a=input("Вы уверены, что хотите обновить? (y/n) ")
 				if a=="y":
-					os.system("cd && rm -rf ~/spymer && git clone https://github.com/FSystem88/spymer && sh ~/spymer/install.sh")
+					os.system("cd && rm -rf ~/spymer && git clone https://github.com/Anton064/spymer && sh ~/spymer/install.sh")
 					exit()
 				else:
 					print("Отменено")
